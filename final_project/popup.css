@@ -1,0 +1,84 @@
+p{display: none;}
+body{width: 300px; background-color: rgb(179, 177, 177); height: 60px;}
+button{width: 50px; height: 35px; margin: 10px;}
+
+.tooltips{
+    display: inline-flex;
+    margin-top:20px;
+}
+
+.tooltipOne .tooltiptextOne{
+    visibility: hidden;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    /* bottom: 100%; */
+    /* left: 50%; */
+    margin-left: -60px;
+    margin-top: -20px;
+    /* color: azure; */
+    background-color: black;
+    opacity: 0.4;
+    color: blanchedalmond;
+    width: 50px;
+    text-align: center;
+    
+}
+.tooltipOne:hover .tooltiptextOne {
+    visibility: visible;
+    
+  }
+
+  .tooltipTwo .tooltiptextTwo{
+    visibility: hidden;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    margin-top: -20px;
+    background-color: black;
+    opacity: 0.4;
+    color: blanchedalmond;
+    width: 50px;
+    text-align: center;
+}
+.tooltipTwo:hover .tooltiptextTwo {
+    visibility: visible;
+  }
+  .tooltipThree .tooltiptextThree{
+    visibility: hidden;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    margin-top: -20px;
+    background-color: black;
+    opacity: 0.4;
+    color: blanchedalmond;
+    width: 50px;
+    text-align: center;
+}
+.tooltipThree:hover .tooltiptextThree {
+    visibility: visible;
+  }
+  .tooltipFour .tooltiptextFour{
+    visibility: hidden;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    margin-top: -20px;
+    background-color: black;
+    opacity: 0.4;
+    color: blanchedalmond;
+    max-width: fit-content;
+    text-align: center;
+    
+}
+.tooltipFour:hover .tooltiptextFour {
+    visibility: visible;
+  }

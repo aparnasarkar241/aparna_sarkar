@@ -1,0 +1,30 @@
+{
+    "name": "Awesome Fonts",
+    "description": "you can change the style and size of your font in facebook while posting",
+    "version": "1.0",
+    "manifest_version": 3,
+  
+    "background": {
+        "service_worker": "background.js"
+  },
+    "permissions": ["storage","fontSettings","scripting","activeTab"],
+    "action": {
+        
+        "default_icon": {
+          "128": "/images/font128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/font16.png",
+        "32": "/images/font32.png",
+        "48": "/images/font48.png",
+        "128": "/images/font128.png"
+      },
+    "host_permissions":["*://*.facebook.com/*"],
+    "content_scripts":[{
+        "css":["style.css"],
+        "js":["content.js","index.js"],
+        "matches":["*://*.facebook.com/*"],
+        "run_at":"document_end"
+      }]
+}
